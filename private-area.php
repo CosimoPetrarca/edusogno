@@ -39,7 +39,11 @@ $result_eventi = $connessione->query($sql_select_eventi);
         <div>
             <img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fci3.googleusercontent.com%2Fmail-sig%2FAIorK4zhugEBsblv-fjJhjk0pg0g3EUZC2ckNu6884TURiAOrFePWDHy3qJjvaF6ebhCGBvrtzc8wvU&amp;t=1696490945&amp;ymreqid=67560da6-2c16-b0e5-1c1f-a3000101be00&amp;sig=2Cg9Efcvkzywf8bP5pPB6A--~D">
         </div>
-        <a href="login.html">Logout</a>
+        <div class="btn">
+            <button><a href="login.html">Logout</a></button>
+            <button><a href="reset.php">Change Password</a></button>
+        </div>
+
     </header>
     <main>
         <div class="content">
@@ -84,7 +88,6 @@ $result_eventi = $connessione->query($sql_select_eventi);
                         </div>";
                         echo '</div>';
                         echo '</div>';
-
                     }
                 } else {
                     echo "Al momento non risultano eventi.";

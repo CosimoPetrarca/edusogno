@@ -8,6 +8,7 @@ body {
     background-repeat: no-repeat; 
     background-attachment: fixed; 
     font-family: Arial, sans-serif;
+    
 }
 
 /* intestazione con il logo */
@@ -21,6 +22,10 @@ header {
     border-bottom-left-radius: 10px; /* Bordi arrotondati in basso a sinistra */
     border-bottom-right-radius: 10px; /* Bordi arrotondati in basso a destra */
     box-shadow: 0px 2px 4px rgba(0, 0, 255, 0.5); /* Box shadow blu */
+}
+
+a{
+    text-decoration: none;
 }
 
 
@@ -66,7 +71,7 @@ main {
     margin: 15px 0;
 }
 
-.event-create, .event-delete, button {
+.event-create, .event-delete, .edit-button, .btn > button {
     color: #fff; 
     border: none;
     padding: 10px 60px;
@@ -83,20 +88,28 @@ main {
     background-color: lightcoral ;
 }
 
-button{
+.edit-button{
     background-color: lightgreen;
+}
+
+.btn > button{
+    background-color: lightyellow;
 }
 
 .event-create:hover {
     background-color: #0056b3; 
 }
 
-button:hover {
+.edit-button:hover {
     background-color: green; 
 }
 
 .event-delete:hover {
     background-color: red; 
+}
+
+.btn > button:hover {
+    background-color: yellow; 
 }
 
 /* sezione "Crea Evento" */
@@ -140,15 +153,7 @@ button:hover {
     background-color: #0056b3;
 }
 
-
-
-
-
-
-
-
-
-/* Stile per il modulo di modifica dell'evento */
+/* modulo di modifica dell'evento */
 .event-edit-form {
     margin-top: 10px;
     padding: 10px;
@@ -179,7 +184,7 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Stile per il pulsante "ELIMINA" */
+/* pulsante "ELIMINA" */
 .delete-button {
     background-color: #dc3545;
     color: #fff;
