@@ -1,0 +1,198 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('https://img.freepik.com/free-vector/people-holding-their-creativity-vector-cute-doodle-icons-set_53876-111621.jpg?w=1800&t=st=1696498907~exp=1696499507~hmac=19f70b0140116ad56e9a2c866fe0475164b7b56462a00d97652e257f3827323a');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    font-family: Arial, sans-serif;
+}
+
+/* intestazione con il logo */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 20px;
+    color: #fff;
+    border-bottom-left-radius: 10px; /* Bordi arrotondati in basso a sinistra */
+    border-bottom-right-radius: 10px; /* Bordi arrotondati in basso a destra */
+    box-shadow: 0px 2px 4px rgba(0, 0, 255, 0.5); /* Box shadow blu */
+}
+
+
+/* main content */
+main {
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.content h2{
+    text-align: center;
+    color: #094e96;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* singoli eventi (card) */
+.event-card {
+    background-color: #fff; 
+    border: 1px solid black;
+    margin: 10px 30px;
+    border-radius: 20px;
+    box-sizing: border-box; 
+    padding: 5px 20px;
+}
+
+
+.event-card p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: lightgrey;
+}
+
+/* pulsante Join */
+.event-card form {
+    display: inline-block;
+    margin-top: 10px;
+    margin: 15px 0;
+}
+
+.event-create, .event-delete, button {
+    color: #fff; 
+    border: none;
+    padding: 10px 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.event-create{
+    background-color: #007bff; 
+}
+
+.event-delete{
+    background-color: lightcoral ;
+}
+
+button{
+    background-color: lightgreen;
+}
+
+.event-create:hover {
+    background-color: #0056b3; 
+}
+
+button:hover {
+    background-color: green; 
+}
+
+.event-delete:hover {
+    background-color: red; 
+}
+
+/* sezione "Crea Evento" */
+.create-event {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0px auto; 
+    margin-top: 50px;
+    max-width: 200px; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.create-event form {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-event input[type="text"],
+.create-event input[type="datetime-local"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.create-event input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.create-event input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+/* Stile per il modulo di modifica dell'evento */
+.event-edit-form {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.event-edit-form input[type="text"],
+.event-edit-form input[type="datetime-local"] {
+    display: flex;
+    width: 70%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.event-edit-form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.event-edit-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Stile per il pulsante "ELIMINA" */
+.delete-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+
+
+

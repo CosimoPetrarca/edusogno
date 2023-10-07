@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Login</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img
+                src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fci3.googleusercontent.com%2Fmail-sig%2FAIorK4zhugEBsblv-fjJhjk0pg0g3EUZC2ckNu6884TURiAOrFePWDHy3qJjvaF6ebhCGBvrtzc8wvU&amp;t=1696490945&amp;ymreqid=67560da6-2c16-b0e5-1c1f-a3000101be00&amp;sig=2Cg9Efcvkzywf8bP5pPB6A--~D">
+        </div>
+    </header>
+    <main>
+        <h2>Hai già un account?</h2>
+        <form action="php/login.php" method="POST">
+            <label for="email"><strong>Inserisci l'e-mail</strong></label>
+            <input type="email" name="email" id="email" placeholder="name@example.com" required>
+            <label for="password"><strong>Inserisci la password</strong></label>
+            <input type="password" name="password" id="password" placeholder="Scrivila qui" required>
+            <input type="submit" value="ACCEDI">
+            <p>Non hai ancora un profilo? <a href="index.php">Registrati</a></p>
+        </form>
+    </main>
+
+    <!-- Modale per gli errori -->
+    <div id="error-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="error-message"></p>
+        </div>
+    </div>
+
+    <script src="./js/login.js"></script>
+</body>
+
+</html>
