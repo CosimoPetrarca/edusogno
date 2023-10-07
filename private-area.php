@@ -17,7 +17,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-$sql_select_eventi = "SELECT * FROM eventi WHERE attendees LIKE '%$email_utente_loggato%'";
+$sql_select_eventi = "SELECT * FROM eventi WHERE attendees LIKE '%$email_utente_loggato%' ORDER BY data_evento ASC";
+
 
 $result_eventi = $connessione->query($sql_select_eventi);
 ?>
